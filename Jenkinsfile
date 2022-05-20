@@ -89,7 +89,7 @@ pipeline {
                 clusterName: 'my-first-cluster-1',
                 zone: 'us-central1-c',
                 manifestPattern: 'k8s/',
-                credentialsId: 'project2',
+                credentialsId: 'project-2',
                 verifyDeployments: true
             ])
 
