@@ -87,7 +87,7 @@ pipeline {
             step([$class: 'KubernetesEngineBuilder',
                 projectId: 'project-2-350804',
                 clusterName: 'my-first-cluster-1',
-                zone: 'us-central1-c',
+                zone: 'us-east1-c',
                 manifestPattern: 'k8s/',
                 credentialsId: 'project-2',
                 verifyDeployments: true
