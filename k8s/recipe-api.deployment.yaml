@@ -20,6 +20,11 @@ spec:
           image: aneeshcm18/project-two-recipe-api:%TAG%
           ports:
             - containerPort: 8000
+        - name: prometheus
+            imagePullPolicy: Always
+            image: bitnami/prometheus
+            ports:
+              - containerPort: 9090
 ---
 apiVersion: v1
 kind: Service
