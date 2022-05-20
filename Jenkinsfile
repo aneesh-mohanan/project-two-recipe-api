@@ -1,6 +1,6 @@
 pipeline {
   environment {
-    registry = 'aneesh-mohanan/project-two-recipe-api'
+    registry = 'aneesh/project-two-recipe-api'
     dockerHubCreds = 'docker_hub'
     dockerImage = ''
   }
