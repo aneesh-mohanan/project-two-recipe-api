@@ -35,7 +35,9 @@ spec:
     app: recipe-api
   type: LoadBalancer
   ports:
-    - port: 80
+    - name: recipe-service
+      port: 80
       targetPort: 8000
-    - port: 90
+    -name: prom-service
+      port: 90
       targetPort: 9091
