@@ -38,6 +38,6 @@ spec:
     - name: recipe-service
       port: 80
       targetPort: 8000
-    -name: prom-service
+    - name: prom-service
       port: 90
       targetPort: 9091
