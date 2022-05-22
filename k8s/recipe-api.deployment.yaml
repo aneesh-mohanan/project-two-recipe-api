@@ -21,17 +21,18 @@ spec:
           ports:
             - containerPort: 8000
         - name: prometheus
-          imagePullPolicy: IfNotPresent
+          imagePullPolicy: Always
           image: bitnami/prometheus
           volumes:
             - ./prometheus.yml:/etc/prometheus/prometheus.yml
           ports:
             - containerPort: 9090
         - name: grafana
-          imagePullPolicy: IfNotPresent
+          imagePullPolicy: Always
           image: grafana/grafana
           ports:
             - containerPort: 3000
+
 ---
 apiVersion: v1
 kind: Service
