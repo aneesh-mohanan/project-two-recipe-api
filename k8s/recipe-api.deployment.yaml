@@ -23,6 +23,8 @@ spec:
         - name: prometheus
           imagePullPolicy: IfNotPresent
           image: bitnami/prometheus
+          volumes:
+            - ./prometheus.yml:/etc/prometheus/prometheus.yml
           ports:
             - containerPort: 9090
         - name: grafana
