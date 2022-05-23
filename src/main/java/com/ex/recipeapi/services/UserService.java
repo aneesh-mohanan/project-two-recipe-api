@@ -56,7 +56,7 @@ public class UserService {
     }
 
     /**
-     * this method will remove a user from Recipe API DB
+     * this method will remove a user from Recipe API Database
      * @param userId - unique identifier for existing user
      * @return - if user is successfully deleted or not
      */
