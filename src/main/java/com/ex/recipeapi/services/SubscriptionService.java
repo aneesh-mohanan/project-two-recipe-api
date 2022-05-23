@@ -32,7 +32,7 @@ public class SubscriptionService {
 
     Logger logger = LoggerFactory.getLogger(SubscriptionController.class);
 
-    
+
     public SubscriptionService(SubscriptionRepository subscriptions, UserRepository userRepository) {
         this.subscriptions = subscriptions;
         this.userRepository = userRepository;
@@ -144,7 +144,9 @@ public class SubscriptionService {
 
                 RestTemplate restTemplate = new RestTemplate();
 
-                String emailingAppUrl = "http://localhost:7000/email/sendEmail/" + emailAddress + "/" + id;
+                String emailApiUrl = System.getenv("EMAIL_API_URL");
+                String emailingAppUrl = emailApiUrl + "/email/sendEmail/" + emailAddress + "/" + id;
+
                 ResponseEntity<String> emailResponse = restTemplate.getForEntity(emailingAppUrl, String.class);
 
                 return "Successfully sent email with this recipe!";
