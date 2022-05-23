@@ -31,5 +31,5 @@ spec:
   type: LoadBalancer
   ports:
     - name: recipe-service
-      port: 81
+      port: 80
       targetPort: 8000
