@@ -29,7 +29,7 @@ spec:
       containers:
         - name: recpie-api
           imagePullPolicy: Always
-          image: aneesh/project-two-recipe-api:%TAG%
+          image: aneeshcm18/project-two-recipe-api:%TAG%
           ports:
             - containerPort: 8000
           env:
